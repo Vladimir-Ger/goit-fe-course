@@ -2,7 +2,6 @@
 .base {
   width: 1000px;
   margin: 0 auto;
-  text-align: center;
 }
 nav main {
   display: inline-block;
@@ -21,6 +20,7 @@ nav {
   padding: 0;
   text-align: center;
   list-style: none;
+  font-size: 14px;
   display: inline-block;
   font-family: "Playfair Display", serif;
 }
@@ -31,6 +31,15 @@ nav {
 .navigation li:not(:last-child) {
   margin-right: 110px;
 }
+.navigation a:hover,
+.navigation a:focus {
+  color: #3399cc;
+}
+a {
+  text-decoration: none;
+  color: rgb(98, 98, 98);
+  text-transform: uppercase;
+}
 .information {
   width: 1000px;
   border: 0px;
@@ -38,12 +47,18 @@ nav {
   display: inline-block;
 }
 h2 {
+  font-size: 30px;
+  color: rgb(98, 98, 98);
   font-family: "Playfair Display", serif;
 }
 p {
+  font-size: 14px;
+  color: rgb(98, 98, 98);
   font-family: "Playfair Display", serif;
 }
 .ubuntu {
+  font-size: 14px;
+  color: rgb(180, 173, 158);
   font-family: "Ubuntu", sans-serif;
 }
 .left {
@@ -68,5 +83,7 @@ p {
 button {
   padding: 10px 30px;
   margin: 0 auto;
-  display: inline-block;
+  font-size: 20px;
+  font-family: "PlayfairDisplay";
+  color: rgb(98, 98, 98);
 }
