@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display|Ubuntu:300&display=swap");
 .container {
-  width: 1000px;
+  width: 901px;
   margin: 0 auto;
 }
 nav main {
@@ -40,10 +40,10 @@ a {
   text-transform: uppercase;
 }
 .information {
-    border: 0px;
+  border: 0px;
   padding: 0%;
   display: inline-block;
-  }
+}
 h2 {
   font-size: 30px;
   color: rgb(98, 98, 98);
@@ -62,16 +62,15 @@ p {
 }
 article {
   border: 0px;
-  width: calc(50% - 50px);
+  width: calc(50% - 29px);
   margin-right: 0%;
   margin-bottom: 143px;
-  
   display: inline-block;
 }
 article:nth-last-child(2n) {
-  padding-right: 64px;
+  padding-right: 54px;
 }
-article:nth-last-child(-n+2) {
+article:nth-last-child(-n + 2) {
   margin-bottom: 58px;
 }
 .button {
