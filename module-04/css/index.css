@@ -24,6 +24,10 @@ nav {
 
 .logo {
   display: inline-block;
+}
+
+.logo h1 {
+  margin: 0;
   text-decoration: none;
   color: #555252;
   font-size: 30px;
@@ -118,7 +122,7 @@ article:nth-child(4n + 1) {
   float: left;
 }
 
-.name a {
+.name h3 {
   font-size: 18px;
   font-weight: 900;
   color: #ffffff;
@@ -159,7 +163,7 @@ main {
   margin-bottom: 16px;
 }
 
-h2 {
+.section h3 {
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
@@ -168,7 +172,7 @@ h2 {
   padding-bottom: 30px;
 }
 
-h2::after {
+.section h3::after {
   content: "";
   display: block;
   margin-top: 15px;
