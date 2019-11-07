@@ -183,6 +183,7 @@ header {
   background-color: #515151;
   float: left;
 }
+
 article:nth-child(4n + 1) {
   margin-right: 0px;
 }
@@ -350,6 +351,7 @@ article:nth-child(4n + 1) {
   background-color: #323232;
   padding: 30px 0px;
 }
+
 .footer h3 {
   font-size: 16px;
   color: #ffffff;
