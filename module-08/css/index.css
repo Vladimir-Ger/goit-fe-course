@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700|Roboto:300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-width: 320px;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  background-image: url(../img/headerDesktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 70px;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: Roboto, serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.menu {
+  text-align: center;
+  flex-direction: column-reverse;
+  margin-bottom: 40px;
+}
+
+
+.logo h1 {
+  font-family: Montserrat, serif;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+.header button {
+  font-family: Montserrat, serif;
+  font-weight: 700;
+  color: #ffffff;
+  border: none;
+  font-size: 14px;
+}
+
+.header-button {
+  padding-top: 20px;
+  margin-bottom: 115px;
+}
+
+.header-button a {
+  padding: 11px 18px;
+  font-family: Montserrat, serif;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.header-button a:hover {
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+}
+
+.find {
+  background-color: rgb(255, 78, 80);
+  width: 280px;
+  height: 40px;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+.titele {
+  width: 320px;
+  font-family: Montserrat, serif;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.titele-section {
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 138px;
+}
+
+.titele-section p {
+  margin: 0 auto;
+  width: 220px;
+  color: #ffffff;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+main {
+  flex-direction: column;
+}
+
+.meet {
+  width: 320px;
+  padding-bottom: 20px;
+  font-family: Montserrat, serif;
+  font-weight: 700;
+  color: #333333;
+  font-size: 22px;
+  margin: 0 auto;
+}
+
+.lists {
+  width: 220px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.lists img {
+  border-radius: 50%;
+}
+
+.lists h3 {
+  padding: 20px 0;
+}
+
+.lists a {
+  font-family: Montserrat, serif;
+  font-weight: 700;
+  color: #333333;
+  font-size: 14px;
+}
+
+.lists a::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 4px solid;
+  border-color: #ffffff;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 82px;
+  right: 50px;
+}
+
+.first a::after {
+  background-color: #ff4e50;
+  background-image: url(../img/TV.png);
+}
+
+.second a::after {
+  background-color: #ffa507;
+  background-image: url(../img/botl.png);
+}
+
+.third a::after {
+  background-color: #1cd7ad;
+  background-image: url(../img/cofee.png);
+}
+
+.fourth a::after {
+  background-color: #4e73db;
+  background-image: url(../img/plane.png);
+}
+
+.lists p {
+  font-size: 14px;
+  color: #666666;
+}
+
+.partner {
+  flex-direction: column;
+}
+
+.footer button {
+  font-family: Montserrat, serif;
+  font-weight: 700;
+  color: rgb(255, 78, 80);
+  font-size: 14px;
+  background-color: #ffffff;
+  width: 280px;
+  height: 40px;
+  border-radius: 20px;
+  border-color: rgb(255, 78, 80);
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    width: 670px;
+    flex-direction: unset;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 154px;
+    }
+    .header-button  {
+      padding-top: 0;
+      margin-bottom: 0;
+    }
+
+    .titele {
+      font-size: 52px;
+      margin: 0 auto;
+    }
+
+    .titele-section p {
+      font-size: 24px;
+      width: 492px;
+    }
+
+    .meet {
+      width: 100%;
+    }
+
+    .partner {
+      width: 492px;
+      flex-direction: unset;
+      flex-wrap: wrap;
+      margin: 0 auto;
+    }
+
+    .footer {
+      margin: 10px auto 40px;
+    }
+
+}
+  
+@media screen and (min-width: 1440px) {
+  .menu {
+    width: 940px;
+    }
+
+    .titele {
+      width: 510px;
+    }
+
+    .partner {
+      width: 940px;
+    }
+}
