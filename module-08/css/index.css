@@ -6,9 +6,14 @@
   box-sizing: border-box;
 }
 
+img{
+  display: block;
+}
+
 .container {
-  min-width: 320px;
-  width: 100%;
+width: 320px;
+flex-direction: column;
+margin: 0 auto;
 }
 
 .flex {
@@ -16,13 +21,20 @@
   justify-content: center;
 }
 
-.header {
+header {
+  min-width: 320px;
+  width: 100%;
   background-image: url(../img/headerDesktop.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+}
+
+.header {
   margin-bottom: 70px;
   flex-direction: column;
+  
 }
 
 a {
@@ -129,6 +141,7 @@ main {
 .lists {
   width: 220px;
   flex-wrap: wrap;
+  align-content: flex-start;
   margin: 0 auto;
   padding-bottom: 30px;
   position: relative;
@@ -136,6 +149,7 @@ main {
 
 .lists img {
   border-radius: 50%;
+  
 }
 
 .lists h3 {
@@ -149,7 +163,7 @@ main {
   font-size: 14px;
 }
 
-.lists a::after {
+.lists ::after {
   content: "";
   display: block;
   width: 40px;
@@ -164,22 +178,22 @@ main {
   right: 50px;
 }
 
-.first a::after {
+.first ::after {
   background-color: #ff4e50;
   background-image: url(../img/TV.png);
 }
 
-.second a::after {
+.second ::after {
   background-color: #ffa507;
   background-image: url(../img/botl.png);
 }
 
-.third a::after {
+.third ::after {
   background-color: #1cd7ad;
   background-image: url(../img/cofee.png);
 }
 
-.fourth a::after {
+.fourth ::after {
   background-color: #4e73db;
   background-image: url(../img/plane.png);
 }
@@ -193,7 +207,8 @@ main {
   flex-direction: column;
 }
 
-.footer button {
+.See_other {
+  margin: 0 auto;
   font-family: Montserrat, serif;
   font-weight: 700;
   color: rgb(255, 78, 80);
@@ -206,6 +221,9 @@ main {
 }
 
 @media screen and (min-width: 768px) {
+  .container {
+    width: 670px;
+  }
   .menu {
     width: 670px;
     flex-direction: unset;
@@ -247,7 +265,10 @@ main {
 
 }
   
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1002px) {
+  .container {
+    width: 942px;
+  }
   .menu {
     width: 940px;
     }
